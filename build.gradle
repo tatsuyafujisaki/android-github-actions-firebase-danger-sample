@@ -1,0 +1,27 @@
+buildscript {
+    ext {
+        kotlin_version = '1.3.50'
+    }
+
+    repositories {
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.3'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+// Deletes the project-level "build" directory when clicking the menu bar > Build > Clean Project.
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
