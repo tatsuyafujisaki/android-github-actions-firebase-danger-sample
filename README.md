@@ -2,11 +2,10 @@
 [.github/workflows/android.yml](.github/workflows/android.yml)
 
 # What this workflow demonstrates
-1. Clone a GitHub repository
-2. Set up JDK 1.8
-3. Run `./gradlew build`, which runs build and unit tests
-4. Run `./gradlew connectedAndroidTest`, which runs instrumented tests on an Android emulator, thanks to https://github.com/marketplace/actions/android-emulator-runner
-5. Notify Slack of the result, thanks to https://github.com/marketplace/actions/action-slack
+1. Build
+2. Unit testing
+3. Instrumented testing
+4. Slack notification
 
 # Prerequisites
 ## Add Incoming Webhooks on slack.com
