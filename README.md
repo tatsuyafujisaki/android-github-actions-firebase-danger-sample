@@ -1,11 +1,5 @@
-# GitHub Actions workflow for Android
-[.github/workflows/android.yml](.github/workflows/android.yml)
-
-# What this workflow demonstrates
-1. Build
-2. Unit testing
-3. Instrumented testing
-4. Slack notification
+# GitHub Actions YAML
+[.github/workflows/android.yml](.github/workflows/main.yml)
 
 # Prerequisites
 ## Add Incoming Webhooks on slack.com
