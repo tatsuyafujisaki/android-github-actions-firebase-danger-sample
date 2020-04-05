@@ -39,4 +39,5 @@ jobs:
       - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
         with:
           version: '285.0.0'
+          account: '110048002388385308078'
           service_account_key: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_PRIVATE_KEY_BASE64 }}
