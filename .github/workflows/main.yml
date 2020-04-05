@@ -39,3 +39,4 @@ jobs:
       - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
         with:
           service_account_key: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_PRIVATE_KEY_BASE64 }}
+      - run: gcloud config set project ${{ secrets.FIREBASE_PROJECT_ID }}
