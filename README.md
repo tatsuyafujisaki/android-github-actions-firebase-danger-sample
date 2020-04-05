@@ -10,7 +10,7 @@ cat downloaded.json | base64
 ```
 4. Set the encoded string to GitHub Secrets. I name it `SERVICE_ACCOUNT_KEY_BASE64`.
 
-## Optional (skip it if you don't want to post results to Slack)
+## Optional (skip it if you don't want to post workflow results to Slack)
 ### Add Incoming Webhooks on slack.com
 1. Go to https://slack.com/apps/A0F7XDUAZ-incoming-webhooks
 2. Add Incoming Webhooks
