@@ -8,14 +8,16 @@ jobs:
     - uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    - run: ./gradlew build
-    - name: Run ./gradlew connectedAndroidTest
-      uses: reactivecircus/android-emulator-runner@v2
+    - run: ./gradlew build assembleAndroidTest # "build" includes lint and test.
+    - uses: actions/upload-artifact@v1
       with:
-        api-level: 29
-        script: ./gradlew connectedAndroidTest
-    - name: Notify Slack
-      uses: 8398a7/action-slack@v2
+        name: app-debug
+        path: app/build/outputs/apk/debug/app-debug.apk
+    - uses: actions/upload-artifact@v1
+      with:
+        name: app-debug-androidTest
+        path: app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
+    - uses: 8398a7/action-slack@v2
       with:
         status: ${{ job.status }}
         author_name: GitHub Actions
