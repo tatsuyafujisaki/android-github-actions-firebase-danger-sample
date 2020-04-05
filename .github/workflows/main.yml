@@ -11,7 +11,6 @@ jobs:
     - run: ./gradlew build assembleAndroidTest # "build" includes lint and test.
     - uses: actions/upload-artifact@v1
       with:
-        name: app-debug
         path: app/build/outputs/apk/debug/app-debug.apk
     - uses: actions/upload-artifact@v1
       with:
