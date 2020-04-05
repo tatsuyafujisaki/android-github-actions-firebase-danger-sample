@@ -4,7 +4,7 @@
 # Prerequisites
 1. Create a service account with an Editor role at https://console.developers.google.com/iam-admin/serviceaccounts (as written in https://firebase.google.com/docs/test-lab/android/continuous)
 2. Create and download a private key for the service account as JSON.
-3. Encode the downloaded JSON file in BASE64 in your favorite way. For example:
+3. Encode the whole JSON file in BASE64 in your favorite way. For example:
 ```shell
 cat downloaded.json | base64
 ```
