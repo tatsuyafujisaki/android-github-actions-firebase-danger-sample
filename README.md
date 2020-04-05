@@ -1,5 +1,5 @@
 # GitHub Actions YAML
-[.github/workflows/android.yml](.github/workflows/main.yml)
+[.github/workflows/main.yml](.github/workflows/main.yml)
 
 # Prerequisites
 ## Add Incoming Webhooks on slack.com
