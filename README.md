@@ -2,8 +2,7 @@
 [.github/workflows/main.yml](.github/workflows/main.yml)
 
 # Prerequisites
-1. Create a service account with an Editor role at https://console.developers.google.com/iam-admin/serviceaccounts
-  * As written in https://firebase.google.com/docs/test-lab/android/continuous
+1. Create a service account with an Editor role at https://console.developers.google.com/iam-admin/serviceaccounts (as written in https://firebase.google.com/docs/test-lab/android/continuous)
 2. Create and download a private key for the service account.
 3. Encode the downloaded JSON file in BASE64 in your favorite way. For example:
 ```shell
