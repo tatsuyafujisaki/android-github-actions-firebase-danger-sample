@@ -17,7 +17,7 @@ cat <private-key>.json | base64 | pbcopy
 cat google-services.json | base64 | pbcopy
 ```
 
-2. GitHub Secrets
+2. GitHub Secrets.
 
 ## Optional (skip it if you don't want to post workflow results to Slack)
 1. Go to https://slack.com/apps/A0F7XDUAZ-incoming-webhooks
