@@ -1,4 +1,4 @@
-package com.github.tatsuyafujisaki.myapplication
+package com.github.tatsuyafujisaki.githubactionssample
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

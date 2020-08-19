@@ -1,4 +1,4 @@
-package com.github.tatsuyafujisaki.myapplication
+package com.github.tatsuyafujisaki.githubactionssample
 
 import android.os.Bundle
 import android.view.Menu
