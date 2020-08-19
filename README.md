@@ -12,12 +12,7 @@ cat <private-key>.json | base64 | pbcopy
 
 # Prerequisites for Firebase App Distribution
 1. Download `google-services.json` from Firebase Console.
-2. Encode it in Base64.
-```shell
-cat google-services.json | base64 | pbcopy
-```
-
-2. GitHub Secrets.
+2. Copy the content to GitHub Secrets. No need to encode it in Base64. I name it `GOOGLE_SERVICES_JSON`.
 
 ## Optional (skip it if you don't want to post workflow results to Slack)
 1. Go to https://slack.com/apps/A0F7XDUAZ-incoming-webhooks
