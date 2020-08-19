@@ -18,6 +18,10 @@ jobs:
         name: app-debug-androidTest
         path: app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
     - run: ./gradlew assembleRelease
+    - uses: actions/upload-artifact@v2
+      with:
+        name: app-release-unsigned
+        path: app/build/outputs/apk/release/app-release-unsigned.apk
     - uses: wzieba/Firebase-Distribution-Github-Action@v1
       with:
         appId: ${{ secrets.FIREBASE_APP_ID }}
