@@ -17,15 +17,21 @@ jobs:
       with:
         name: app-debug-androidTest
         path: app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
+    - run: ./gradlew assembleRelease
+    - uses: wzieba/Firebase-Distribution-Github-Action@v1
+      with:
+        appId: ${{ secrets.FIREBASE_APP_ID }}
+        token: ${{ secrets.FIREBASE_TOKEN }}
+        file: app/build/outputs/apk/release/app-release-unsigned.apk
   firebase:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/download-artifact@v1
+      - uses: actions/checkout@v2
+      - uses: actions/download-artifact@v2
         with:
           name: app-debug
-      - uses: actions/download-artifact@v1
+      - uses: actions/download-artifact@v2
         with:
           name: app-debug-androidTest
       - run: echo $GOOGLE_SERVICES_JSON > app/google-services.json
