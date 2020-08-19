@@ -1,5 +1,5 @@
 # GitHub Actions YAML
-[.github/workflows/main.yml](.github/workflows/main.yml)
+[.github/workflows/android.yml](.github/workflows/main.yml)
 
 # Prerequisites
 1. Create a service account with an Editor role at https://console.developers.google.com/iam-admin/serviceaccounts (as written in https://firebase.google.com/docs/test-lab/android/continuous)
