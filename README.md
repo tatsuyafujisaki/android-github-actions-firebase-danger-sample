@@ -8,7 +8,7 @@
 [.github/workflows/android.yml](.github/workflows/android.yml)
 
 # Preparation
-## for Firebase Test Lab
+## for Firebase Test Lab (for instrumented unit tests)
 1. Copy your Firebase Project ID from Firebase Console, and add it to GitHub Secrets as `FIREBASE_PROJECT_ID`.
 2. Create a service account with an Editor role at https://console.developers.google.com/iam-admin/serviceaccounts
     * cf. https://firebase.google.com/docs/test-lab/android/continuous)
