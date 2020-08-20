@@ -9,7 +9,8 @@
 ```shell
 cat <private-key>.json | base64 | pbcopy
 ```
-4. Add the encoded string to GitHub Secrets as `GOOGLE_SERVICES_JSON_BASE64`.
+4. Add the encoded string to GitHub Secrets as `SERVICE_ACCOUNT_KEY_BASE64`.
+
 
 ## for Firebase App Distribution
 1. Copy your Firebase app ID from Firebase Console, and add it to GitHub Secrets as `FIREBASE_APP_ID`.
