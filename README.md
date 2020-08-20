@@ -33,7 +33,7 @@ cat <private-key>.json | base64
 5. Paste it in GitHub Secrets. I name it `SLACK_WEBHOOK_URL`.
 
 # Appendix (optional)
-## How to use `google-services.json` in a public repository.
+## How to use `google-services.json` securely in a public repository.
 1. Download `google-services.json` from Firebase Console.
 2. Copy the content to GitHub Secrets without encoding it in Base64. I name it `GOOGLE_SERVICES_JSON`.
 3. Add the following to your workflow.
