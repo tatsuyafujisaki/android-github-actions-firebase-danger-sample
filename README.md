@@ -9,14 +9,15 @@
 
 # Preparation
 ## for Firebase Test Lab
-1. Create a service account with an Editor role at https://console.developers.google.com/iam-admin/serviceaccounts
+1. Copy your Firebase Project ID from Firebase Console, and add it to GitHub Secrets as `FIREBASE_PROJECT_ID`.
+2. Create a service account with an Editor role at https://console.developers.google.com/iam-admin/serviceaccounts
     * cf. https://firebase.google.com/docs/test-lab/android/continuous)
-2. Download a private key for the service account as JSON.
-3. Encode it in Base64 in your favorite way. For example:
+3. Download a private key for the service account as JSON.
+4. Encode it in Base64 in your favorite way. For example:
 ```shell
 cat <private-key>.json | base64
 ```
-4. Add the encoded string to GitHub Secrets as `SERVICE_ACCOUNT_KEY_BASE64`.
+5. Add the encoded string to GitHub Secrets as `SERVICE_ACCOUNT_KEY_BASE64`.
 
 ## for Firebase App Distribution
 1. Copy your Firebase app ID from Firebase Console, and add it to GitHub Secrets as `FIREBASE_APP_ID`.
