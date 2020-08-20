@@ -58,7 +58,7 @@ jobs:
         with:
           service_account_key: ${{ secrets.SERVICE_ACCOUNT_KEY_BASE64 }}
       - run: gcloud config set project ${{ secrets.FIREBASE_PROJECT_ID }}
-      - run: gcloud firebase test android run --type instrumentation --app app-debug/app-debug.apk --test app-debug-androidTest/app-debug-androidTest.apk --device model=flame,version=29
+      - run: gcloud firebase test android run --type instrumentation --app app-debug.apk --test app-debug-androidTest.apk --device model=flame,version=29
       - uses: 8398a7/action-slack@v2
         with:
           status: ${{ job.status }}
