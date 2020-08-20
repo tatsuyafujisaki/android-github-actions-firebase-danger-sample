@@ -22,8 +22,9 @@ cat <private-key>.json | base64
 ## for Firebase App Distribution
 1. Copy your Firebase app ID from Firebase Console, and add it to GitHub Secrets as `FIREBASE_APP_ID`.
 2. Install Firebase CLI on your computer.
-3. Run `firebase login:ci` on console of your computer, and a token will be printed.
-4. Add the token to GitHub Secrets `FIREBASE_TOKEN`.
+3. Run `firebase login:ci` on Terminal/Console, and a Firebase token will be printed.
+    * cf. https://firebase.google.com/docs/cli
+4. Add the token to GitHub Secrets as `FIREBASE_TOKEN`.
 
 ## for Slack
 1. Go to https://slack.com/apps/A0F7XDUAZ-incoming-webhooks
