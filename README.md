@@ -1,18 +1,23 @@
 # GitHub Actions YAML
 [.github/workflows/android.yml](.github/workflows/android.yml)
 
-# Prerequisites for Firebase Test Lab
+# Preparation
+## for Firebase Test Lab
 1. Create a service account with an Editor role at https://console.developers.google.com/iam-admin/serviceaccounts (as written in https://firebase.google.com/docs/test-lab/android/continuous)
 2. Download a private key for the service account as JSON.
 3. Encode it in Base64.
 ```shell
 cat <private-key>.json | base64 | pbcopy
 ```
-4. Set the encoded string to GitHub Secrets. I name it `GOOGLE_SERVICES_JSON_BASE64`.
+4. Add the encoded string to GitHub Secrets as `GOOGLE_SERVICES_JSON_BASE64`.
 
-# Prerequisites for Firebase App Distribution
+## for Firebase App Distribution
+1. Copy your Firebase app ID from Firebase Console, and add it to GitHub Secrets as `FIREBASE_APP_ID`.
+2. Install Firebase CLI on your computer.
+3. Run `firebase login:ci` on console of your computer, and a token will be printed.
+4. Add the token to GitHub Secrets `FIREBASE_TOKEN`.
 
-## Add Slack
+## for Slack
 1. Go to https://slack.com/apps/A0F7XDUAZ-incoming-webhooks
 2. Add Incoming Webhooks
 3. `Integration Settings` > `Post to Channel` > (select a channel)
