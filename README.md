@@ -29,7 +29,7 @@ cat <private-key>.json | base64
 1. Go to https://slack.com/apps/A0F7XDUAZ-incoming-webhooks
 2. Add Incoming Webhooks
 3. `Integration Settings` > `Post to Channel` > (select a channel)
-4. Copy `Webhook URL`
+4. Copy `Webhook URL`.
 5. Paste it in GitHub Secrets. I name it `SLACK_WEBHOOK_URL`.
 
 # Appendix (optional)
