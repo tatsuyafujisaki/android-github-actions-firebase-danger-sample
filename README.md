@@ -1,3 +1,9 @@
+# Intro
+* This sample is to link the following on GitHub Actions.
+  * Firebase Test Lab (for instrumented unit tests)
+  * Firebase App Distribution
+  * Slack
+
 # GitHub Actions YAML
 [.github/workflows/android.yml](.github/workflows/android.yml)
 
@@ -5,12 +11,11 @@
 ## for Firebase Test Lab
 1. Create a service account with an Editor role at https://console.developers.google.com/iam-admin/serviceaccounts (as written in https://firebase.google.com/docs/test-lab/android/continuous)
 2. Download a private key for the service account as JSON.
-3. Encode it in Base64.
+3. Encode it in Base64 in your favorite way. For example:
 ```shell
-cat <private-key>.json | base64 | pbcopy
+cat <private-key>.json | base64
 ```
 4. Add the encoded string to GitHub Secrets as `SERVICE_ACCOUNT_KEY_BASE64`.
-
 
 ## for Firebase App Distribution
 1. Copy your Firebase app ID from Firebase Console, and add it to GitHub Secrets as `FIREBASE_APP_ID`.
