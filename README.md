@@ -37,6 +37,7 @@ cat <private-key>.json | base64
 ## How to use `google-services.json` securely in a public repository
 1. Download `google-services.json` from Firebase Console.
 2. Copy the raw content to GitHub Secrets as, let's say, `GOOGLE_SERVICES_JSON`.
+    * No need to encode the content in Base64.
 3. Add the following to your workflow.
 ```yaml
 - run: echo $GOOGLE_SERVICES_JSON > app/google-services.json
