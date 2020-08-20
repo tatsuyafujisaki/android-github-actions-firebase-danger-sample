@@ -36,12 +36,13 @@ jobs:
       - uses: actions/download-artifact@v2
         with:
           name: app-release-unsigned
+      - run: ls -R
       - uses: wzieba/Firebase-Distribution-Github-Action@v1
         with:
           appId: ${{ secrets.FIREBASE_APP_ID }}
           token: ${{ secrets.FIREBASE_TOKEN }}
           groups: testers
-          file: app/build/outputs/apk/release/app-release-unsigned.apk
+          file: app-release-unsigned.apk
   firebase-test-labs:
     needs: build
     runs-on: ubuntu-latest
