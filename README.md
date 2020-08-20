@@ -1,5 +1,5 @@
-# Intro
-* This sample is to link the following on GitHub Actions.
+# Overview
+* This sample is to link the following to GitHub Actions.
   * Firebase Test Lab (for instrumented unit tests)
   * Firebase App Distribution
   * Slack
