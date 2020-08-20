@@ -9,7 +9,8 @@
 
 # Preparation
 ## for Firebase Test Lab
-1. Create a service account with an Editor role at https://console.developers.google.com/iam-admin/serviceaccounts (as written in https://firebase.google.com/docs/test-lab/android/continuous)
+1. Create a service account with an Editor role at https://console.developers.google.com/iam-admin/serviceaccounts
+    * cf. https://firebase.google.com/docs/test-lab/android/continuous)
 2. Download a private key for the service account as JSON.
 3. Encode it in Base64 in your favorite way. For example:
 ```shell
