@@ -11,9 +11,6 @@ jobs:
       - uses: actions/setup-java@v1
         with:
           java-version: 1.8
-      - run: echo $GOOGLE_SERVICES_JSON > app/google-services.json
-        env:
-          GOOGLE_SERVICES_JSON: ${{ secrets.GOOGLE_SERVICES_JSON }}
       - run: ./gradlew build assembleDebugAndroidTest # "build" includes lint and test.
       - run: ./gradlew assembleRelease
       - uses: actions/upload-artifact@v2
