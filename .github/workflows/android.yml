@@ -67,4 +67,3 @@ jobs:
           token: ${{ secrets.FIREBASE_TOKEN }}
           groups: testers
           file: app-release-unsigned.apk
-          debug: true
