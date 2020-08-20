@@ -1,7 +1,7 @@
 # GitHub Actions YAML
 [.github/workflows/android.yml](.github/workflows/android.yml)
 
-# Prerequisites
+# Prerequisites for Firebase Test Lab
 1. Create a service account with an Editor role at https://console.developers.google.com/iam-admin/serviceaccounts (as written in https://firebase.google.com/docs/test-lab/android/continuous)
 2. Download a private key for the service account as JSON.
 3. Encode it in Base64.
