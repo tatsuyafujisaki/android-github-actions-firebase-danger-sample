@@ -1,5 +1,5 @@
 # Overview
-* This sample demonstrates how to use the following on GitHub Actions.
+* This sample demonstrates how to use the following on GitHub Actions for Android apps.
   * Firebase Test Lab (for instrumented unit tests)
   * Firebase App Distribution
   * Slack
