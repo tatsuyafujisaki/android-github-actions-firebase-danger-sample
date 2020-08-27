@@ -1,11 +1,11 @@
-# Overview
-* This sample demonstrates how to use the following on GitHub Actions for Android apps.
-  * Firebase Test Lab (for instrumented unit tests)
-  * Firebase App Distribution
-  * Slack
-
 # GitHub Actions YAML
-[.github/workflows/android.yml](.github/workflows/android.yml)
+* [.github/workflows/dagger.yml](.github/workflows/dagger.yml)
+  * demonstrates how to use Dagger.
+* [.github/workflows/firebase-and-slack.yml](.github/workflows/firebase-and-slack.yml)
+  * demonstrates how to use the following.
+    * Firebase Test Lab (for instrumented unit tests)
+    * Firebase App Distribution
+    * Slack
 
 # Preparation
 ## for Firebase Test Lab (for instrumented unit tests)
