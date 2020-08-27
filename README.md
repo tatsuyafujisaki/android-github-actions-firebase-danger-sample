@@ -1,9 +1,9 @@
 # GitHub Actions YAML
-* [.github/workflows/danger.yml](.github/workflows/danger.yml)
+* [.github/workflows/danger.yaml](.github/workflows/danger.yaml)
   * demonstrates how to use Danger.
-* [.github/workflows/firebase-and-slack.yml](.github/workflows/firebase-and-slack.yml)
+* [.github/workflows/firebase-and-slack.yaml](.github/workflows/firebase-and-slack.yaml)
   * demonstrates how to use the following.
-    * Firebase Test Lab (for instrumented unit tests)
+    * Firebase Test Lab
     * Firebase App Distribution
     * Slack
 
