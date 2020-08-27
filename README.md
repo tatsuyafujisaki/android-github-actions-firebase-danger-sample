@@ -8,7 +8,13 @@
     * Slack
 
 # Preparation
-## for Firebase Test Lab (for instrumented unit tests)
+## for Danger
+No preparation is required unless you want to use a bot account. If you want to use a bot account, follow the instructions below.
+1. Create a new account on GitHub. 
+2. Create the account's personal access token that has full access to repo.
+3. Add the token to GitHub Secrets as `DANGER_GITHUB_API_TOKEN`.
+
+## for Firebase Test Lab
 1. Copy your Firebase Project ID from Firebase Console, and add it to GitHub Secrets as `FIREBASE_PROJECT_ID`.
 2. Create a service account with an `Editor` role at https://console.developers.google.com/iam-admin/serviceaccounts
     * cf. https://firebase.google.com/docs/test-lab/android/continuous)
