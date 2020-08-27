@@ -12,13 +12,10 @@ jobs:
       - uses: actions/setup-java@v1
         with:
           java-version: 1.8
-      - uses: actions/setup-ruby@v1
-        with:
-          ruby-version: 2.6
-      - run: |
-          gem install bundler
-          bundle install
       - run: ./gradlew ktlintCheck
-      - run: danger
+      - run: yarn add danger-plugin-ktlint-report
+        if: always()
+      - uses: danger/danger-js@9.1.8
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DANGER_DISABLE_TRANSPILATION: true
