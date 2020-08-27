@@ -17,7 +17,7 @@ jobs:
           bundle install
           danger
         env:
-          # Use the following if you want a bot account comment on the pull request.
+          # Use the following if you want a bot account to comment on the pull request.
           DANGER_GITHUB_API_TOKEN: ${{ secrets.DANGER_GITHUB_API_TOKEN }} // A bot account's personal access token that has full access to repo.
           # Otherwise, use the following.
           # DANGER_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
