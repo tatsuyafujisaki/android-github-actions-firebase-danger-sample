@@ -2,7 +2,7 @@
 * [.github/workflows/danger.yaml](.github/workflows/danger.yaml)
   * demonstrates how to use Danger.
 * [.github/workflows/firebase-and-slack.yaml](.github/workflows/firebase-and-slack.yaml)
-  * demonstrates how to use the following.
+  * demonstrates how to use:
     * Firebase Test Lab
     * Firebase App Distribution
     * Slack
