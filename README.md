@@ -1,6 +1,6 @@
 # GitHub Actions YAML
-* [.github/workflows/dagger.yml](.github/workflows/dagger.yml)
-  * demonstrates how to use Dagger.
+* [.github/workflows/danger.yml](.github/workflows/danger.yml)
+  * demonstrates how to use Danger.
 * [.github/workflows/firebase-and-slack.yml](.github/workflows/firebase-and-slack.yml)
   * demonstrates how to use the following.
     * Firebase Test Lab (for instrumented unit tests)
