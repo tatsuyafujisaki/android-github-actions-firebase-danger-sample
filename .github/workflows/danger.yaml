@@ -13,6 +13,7 @@ jobs:
         with:
           java-version: 1.8
       - run: ./gradlew ktlintCheck
+      - run: yarn add danger-plugin-ktlint-report
       - uses: danger/danger-js@9.1.8
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
