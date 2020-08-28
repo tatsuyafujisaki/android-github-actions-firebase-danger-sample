@@ -1,7 +1,7 @@
-# 変更行以外は指摘しない
+# Avoid issuing warnings about things that exist before the pull request.
 github.dismiss_out_of_range_messages
 
-# WIPの場合は警告を表示する
+# Issue a warning if a pull request has WIP (Work in Progress) in the title.
 warn('PR is classed as Work in Progress') if github.pr_title.include? '[WIP]'
 
 # ktlint
