@@ -35,7 +35,7 @@ subprojects {
         }
         ignoreFailures = true // prevents the build from failing by warnings from ktlint.
         /*
-         * Unless explicitly specified, fields default to the following:
+         * Unless explicitly specified, other ktlint settings default to the following:
          * https://github.com/JLLeitschuh/ktlint-gradle/blob/master/plugin/src/main/kotlin/org/jlleitschuh/gradle/ktlint/KtlintExtension.kt
          */
     }
