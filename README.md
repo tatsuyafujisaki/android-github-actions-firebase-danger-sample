@@ -1,7 +1,7 @@
 # GitHub Actions YAML
-* [.github/workflows/danger.yaml](.github/workflows/danger.yaml)
+* [.github/workflows/danger.yml](.github/workflows/danger.yml)
   * demonstrates how to use Danger.
-* [.github/workflows/firebase-and-slack.yaml](.github/workflows/firebase-and-slack.yaml)
+* [.github/workflows/firebase-and-slack.yml](.github/workflows/firebase-and-slack.yml)
   * demonstrates how to use:
     * Firebase Test Lab
     * Firebase App Distribution
@@ -10,7 +10,7 @@
 # Preparation
 ## for Danger
 No preparation is required unless you want to use a bot account. If you want to use a bot account, follow the instructions below.
-1. Create a new account on GitHub. 
+1. Create a new account on GitHub.
 2. Create the account's personal access token that has full access to repo.
 3. Add the token to GitHub Secrets as `DANGER_GITHUB_API_TOKEN`.
 
