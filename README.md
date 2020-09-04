@@ -10,9 +10,10 @@
 # Preparation
 ## for Danger
 No preparation is required unless you want to use a bot account. If you want to use a bot account, follow the instructions below.
-1. Create a new account on GitHub.
-2. Create the account's personal access token that has full access to repo.
-3. Add the token to GitHub Secrets as `DANGER_GITHUB_API_TOKEN`.
+1. Create a bot account on GitHub.
+2. Add the bot account to the repository as a collaborator.
+4. Create the bot account's personal access token that has full access to repo.
+5. Add the token to GitHub Secrets as `DANGER_GITHUB_API_TOKEN`.
 
 ## for Firebase Test Lab
 1. Copy your Firebase Project ID from Firebase Console, and add it to GitHub Secrets as `FIREBASE_PROJECT_ID`.
