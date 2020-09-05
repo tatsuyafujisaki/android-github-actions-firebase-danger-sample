@@ -43,7 +43,11 @@ jobs:
         with:
           service_account_key: ${{ secrets.SERVICE_ACCOUNT_KEY_BASE64 }}
       - run: gcloud config set project ${{ secrets.FIREBASE_PROJECT_ID }}
-      - run: gcloud firebase test android run --type instrumentation --app app-debug.apk --test app-debug-androidTest.apk --device model=flame,version=29
+      # Virtual devices have more quotas than physical devices.
+      # https://firebase.google.com/pricing
+      # Pixel 2 is the latest available virtual device.
+      # https://firebase.google.com/docs/test-lab/android/available-testing-devices
+      - run: gcloud firebase test android run --type instrumentation --app app-debug.apk --test app-debug-androidTest.apk --device model=Pixel2,version=29
       - uses: 8398a7/action-slack@v2
         with:
           status: ${{ job.status }}
